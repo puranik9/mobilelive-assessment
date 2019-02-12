@@ -164,6 +164,7 @@ class Question extends Component {
                     <CodeSnippet/>
                 </div>
                 <div className="input-group">
+                    <h4 className="blue-text">Parameters</h4>
                     <div className="input-item">
                         <label htmlFor="current">Current</label>
                         <input type="number" name="current" required placeholder="Enter value" value={this.state.current} onChange={this.handleInputChange}/>
