@@ -23,7 +23,6 @@ class Question extends Component {
 
     cycle(current, imove, start, end) {
 
-        let startTime = new Date().toLocaleTimeString();
         //Check if parameter values are entered or not
         if(imove === '' || current === '' || start === '' || end === '') {
             alert("Please enter the required values");
@@ -39,10 +38,26 @@ class Question extends Component {
         let finalPosition;
         let currIndex;
 
+        if(!(current >= start && current <= end)) {
+            alert("Error: Current value must be between start and end");
+            this.setState({
+                loading: false,
+                current: ''
+            })
+        }
+
         //populate both arrays with start to end elements
         for(let i=start; i<=end; i++) {
             arr.push(i);
             cycleArr.push(i);
+        }
+
+        if(imove > arr.length) {
+            alert("Error: # of moves must be less than or equal to length of array");
+            this.setState({
+                loading: false,
+                imove: ''
+            })
         }
 
         for(let i=0; i<cycleArr.length; i++) {
@@ -79,7 +94,6 @@ class Question extends Component {
 
         //final position is shifted current value index in original array
         finalPosition = arr[currIndex];
-        let endTime = new Date().toLocaleTimeString();
         //return finalPosition;
         setTimeout(() => {
             this.setState({
