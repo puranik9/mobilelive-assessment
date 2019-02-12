@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Title from "./Title";
 import Question from "./Question";
+import Footer from "./Footer";
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="App">
         <Title/>
         <Question/>
+        <Footer/>
       </div>
     );
   }

@@ -23,6 +23,7 @@ class Question extends Component {
 
     cycle(current, imove, start, end) {
 
+        let startTime = new Date().toLocaleTimeString();
         //Check if parameter values are entered or not
         if(imove === '' || current === '' || start === '' || end === '') {
             alert("Please enter the required values");
@@ -78,13 +79,14 @@ class Question extends Component {
 
         //final position is shifted current value index in original array
         finalPosition = arr[currIndex];
+        let endTime = new Date().toLocaleTimeString();
         //return finalPosition;
         setTimeout(() => {
             this.setState({
                 loading: false,
                 result: finalPosition
             });
-        }, 2000)
+        }, 1000)
 
     }
 

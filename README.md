@@ -1,68 +1,45 @@
+# mobileLIVE Written Assessment
+
+The solution to the assessment was written in JavaScript, React, HTML, & CSS. You will find my thought process behind the solution on this page followed by instructions to run the program. I have also displayed my source code for the program and you can test it out yourself. If you have any issues, please contact me at puranikkartik@gmail.com and I will get back to you as soon as possible.
+
+## Instructions to run program
+
+1. Clone or Download (.zip) this repository
+2. In your terminal, cd into the `mobilelive-assessment` directory
+3. If you don't have npm installed, please do so here: `https://www.npmjs.com/get-npm`
+4. Run `npm install`
+5. Run `npm start`
+6. Open `http://localhost:3000` in your favorite browser
+7. Hit the `Run Code` button to compile the program and simply wait to see the result on your screen.
+8. Hit the `Reset` button to start over.
+9. Enjoy!
+
+## Question
+
+Write a `function` to return the final position after increasing or decreasing an `int` with a min (starting point) and max (ending point) number.
+
+## Method Objective
+
+The first parameter is the current position.
+
+The 2nd parameter is the # of moves (negative means going backwards or left).
+
+The 3rd parameter is the first number of the array, 4th is the last.
+
+If end / start of array is reached, loop from the other end again.
+
+## Thought process
+
+The idea is to first populate two different arrays with elements from `start` to `end`. Then loop through the cycle array until the current value is seen, and when it is seen, shift the cycle array left or right for the given number of moves depending on the sign of `imove`. Keep track of the index of the current value in the new shifted array. The final position is the value of the element in new current index in the original array.
+
+## Examples
+
+this.cycle(3,1,1,5); // [1,2,**3**,**4**,5] , result is 4
+
+this.cycle(7,-2,3,7); // [3,4,**5**,6,**7**] , result is 5
+
+this.cycle(3,-3,1,5); // [1,2,**3**,4,**5**] , result is 5
+
+this.cycle(3,3,1,5); // [**1**,2,**3**,4,5] , result is 1
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
