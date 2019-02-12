@@ -32,11 +32,6 @@ a {
     padding-left: 1em;
 }
 
-.Answer h4 {
-    width: 65%;
-    margin: 2em auto 0;
-}
-
 .result {
     visibility: hidden;
 }
