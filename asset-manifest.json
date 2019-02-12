@@ -1,14 +1,14 @@
 {
-  "main.css": "/mobilelive-assessment/static/css/main.1bd52734.chunk.css",
-  "main.js": "/mobilelive-assessment/static/js/main.babb6436.chunk.js",
-  "main.js.map": "/mobilelive-assessment/static/js/main.babb6436.chunk.js.map",
+  "main.css": "/mobilelive-assessment/static/css/main.66ca020f.chunk.css",
+  "main.js": "/mobilelive-assessment/static/js/main.3650a93b.chunk.js",
+  "main.js.map": "/mobilelive-assessment/static/js/main.3650a93b.chunk.js.map",
   "runtime~main.js": "/mobilelive-assessment/static/js/runtime~main.3fedc3ef.js",
   "runtime~main.js.map": "/mobilelive-assessment/static/js/runtime~main.3fedc3ef.js.map",
   "static/js/2.7bbf2c8e.chunk.js": "/mobilelive-assessment/static/js/2.7bbf2c8e.chunk.js",
   "static/js/2.7bbf2c8e.chunk.js.map": "/mobilelive-assessment/static/js/2.7bbf2c8e.chunk.js.map",
   "index.html": "/mobilelive-assessment/index.html",
-  "precache-manifest.fe6452a0b84977b0375c40cc1a972999.js": "/mobilelive-assessment/precache-manifest.fe6452a0b84977b0375c40cc1a972999.js",
+  "precache-manifest.56e24d2d3fe04301cc5e66be81e4e42f.js": "/mobilelive-assessment/precache-manifest.56e24d2d3fe04301cc5e66be81e4e42f.js",
   "service-worker.js": "/mobilelive-assessment/service-worker.js",
-  "static/css/main.1bd52734.chunk.css.map": "/mobilelive-assessment/static/css/main.1bd52734.chunk.css.map",
+  "static/css/main.66ca020f.chunk.css.map": "/mobilelive-assessment/static/css/main.66ca020f.chunk.css.map",
   "static/media/logo.svg": "/mobilelive-assessment/static/media/logo.5d5d9eef.svg"
 }
