@@ -8,10 +8,10 @@ class Question extends Component {
         super();
 
         this.state = {
-            current: 3,
-            imove: 1,
-            start: 1,
-            end: 5,
+            current: 7,
+            imove: -2,
+            start: 3,
+            end: 7,
             result: '',
             loading: false
         };
@@ -44,20 +44,18 @@ class Question extends Component {
                 loading: false,
                 current: ''
             })
+        } else if(imove > (end-start)) {
+            alert("Error: # of moves must be less than or equal to length of array");
+            this.setState({
+                loading: false,
+                imove: ''
+            })
         }
 
         //populate both arrays with start to end elements
         for(let i=start; i<=end; i++) {
             arr.push(i);
             cycleArr.push(i);
-        }
-
-        if(imove > arr.length) {
-            alert("Error: # of moves must be less than or equal to length of array");
-            this.setState({
-                loading: false,
-                imove: ''
-            })
         }
 
         for(let i=0; i<cycleArr.length; i++) {
@@ -168,24 +166,24 @@ class Question extends Component {
                 <div className="input-group">
                     <div className="input-item">
                         <label htmlFor="current">Current</label>
-                        <input name="current" required placeholder="Enter value" value={this.state.current} onChange={this.handleInputChange}/>
+                        <input type="number" name="current" required placeholder="Enter value" value={this.state.current} onChange={this.handleInputChange}/>
                     </div>
                     <div className="input-item">
                         <label htmlFor="imove"># of Moves</label>
-                        <input name="imove" required placeholder="Enter value" value={this.state.imove} onChange={this.handleInputChange}/>
+                        <input type="number" name="imove" required placeholder="Enter value" value={this.state.imove} onChange={this.handleInputChange}/>
                     </div>
                     <div className="input-item">
                         <label htmlFor="start">Start</label>
-                        <input name="start" required placeholder="Enter value" value={this.state.start} onChange={this.handleInputChange}/>
+                        <input type="number" name="start" required placeholder="Enter value" value={this.state.start} onChange={this.handleInputChange}/>
                     </div>
                     <div className="input-item">
                         <label htmlFor="end">End</label>
-                        <input name="end" required placeholder="Enter value" value={this.state.end} onChange={this.handleInputChange}/>
+                        <input type="number" name="end" required placeholder="Enter value" value={this.state.end} onChange={this.handleInputChange}/>
                     </div>
                 </div>
                 <div className="input-result">
                     {this.state.loading && <h1>Compiling...</h1>}
-                    {this.state.result && <h1>The result is {this.state.result} </h1>}
+                    {this.state.result && !this.state.loading && <h1>The result is {this.state.result} </h1>}
                 </div>
                 <div className="input-button">
                     <button className="button" type="submit" onClick={() => this.cycle(this.state.current, this.state.imove, this.state.start, this.state.end)}>

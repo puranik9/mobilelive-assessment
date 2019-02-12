@@ -49,7 +49,7 @@ a {
 
 .input-group {
     margin: 1em auto;
-    width: 60%;
+    width: 65%;
 }
 
 .input-item {
@@ -79,7 +79,8 @@ a {
 }
 
 .button {
-    padding: 1em 2em;
+    padding: 1em;
+    width: 10em;
     margin: 1em;
     font-size: 14px;
     border-radius: 5px;
