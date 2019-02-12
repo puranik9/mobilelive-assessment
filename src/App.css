@@ -4,9 +4,7 @@ a {
 .code-box {
     margin: 0 auto;
     width: 65%;
-    padding: 0 2em;
     overflow: scroll;
-    color: #efefef;
 }
 
 .code-snippet {
@@ -99,6 +97,14 @@ a {
 .input-result {
     width: 60%;
     margin: 0 auto;
+
+    text-align: center;
+    color: #ffffff;
+}
+
+.input-result h1 {
+    background: #000000;
+    padding: 1em;
 }
 
 #loading-text {

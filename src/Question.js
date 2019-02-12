@@ -162,37 +162,37 @@ class Question extends Component {
                 <div className="Answer">
                     <h4 className="blue-text">Code</h4>
                     <CodeSnippet/>
-                </div>
-                <div className="input-group">
-                    <h4 className="blue-text">Parameters</h4>
-                    <div className="input-item">
-                        <label htmlFor="current">Current</label>
-                        <input type="number" name="current" required placeholder="Enter value" value={this.state.current} onChange={this.handleInputChange}/>
+                    <div className="input-group">
+                        <h4 className="blue-text">Parameters</h4>
+                        <div className="input-item">
+                            <label htmlFor="current">Current</label>
+                            <input type="number" name="current" required placeholder="Enter value" value={this.state.current} onChange={this.handleInputChange}/>
+                        </div>
+                        <div className="input-item">
+                            <label htmlFor="imove"># of Moves</label>
+                            <input type="number" name="imove" required placeholder="Enter value" value={this.state.imove} onChange={this.handleInputChange}/>
+                        </div>
+                        <div className="input-item">
+                            <label htmlFor="start">Start</label>
+                            <input type="number" name="start" required placeholder="Enter value" value={this.state.start} onChange={this.handleInputChange}/>
+                        </div>
+                        <div className="input-item">
+                            <label htmlFor="end">End</label>
+                            <input type="number" name="end" required placeholder="Enter value" value={this.state.end} onChange={this.handleInputChange}/>
+                        </div>
                     </div>
-                    <div className="input-item">
-                        <label htmlFor="imove"># of Moves</label>
-                        <input type="number" name="imove" required placeholder="Enter value" value={this.state.imove} onChange={this.handleInputChange}/>
+                    <div className="input-result">
+                        {this.state.loading && <h1>Compiling...</h1>}
+                        {this.state.result && !this.state.loading && <h1>The result is {this.state.result}</h1>}
                     </div>
-                    <div className="input-item">
-                        <label htmlFor="start">Start</label>
-                        <input type="number" name="start" required placeholder="Enter value" value={this.state.start} onChange={this.handleInputChange}/>
+                    <div className="input-button">
+                        <button className="button" type="submit" onClick={() => this.cycle(this.state.current, this.state.imove, this.state.start, this.state.end)}>
+                            Run Code
+                        </button>
+                        <button className="button" onClick={this.reset}>
+                            Reset
+                        </button>
                     </div>
-                    <div className="input-item">
-                        <label htmlFor="end">End</label>
-                        <input type="number" name="end" required placeholder="Enter value" value={this.state.end} onChange={this.handleInputChange}/>
-                    </div>
-                </div>
-                <div className="input-result">
-                    {this.state.loading && <h1>Compiling...</h1>}
-                    {this.state.result && !this.state.loading && <h1>The result is {this.state.result} </h1>}
-                </div>
-                <div className="input-button">
-                    <button className="button" type="submit" onClick={() => this.cycle(this.state.current, this.state.imove, this.state.start, this.state.end)}>
-                        Run Code
-                    </button>
-                    <button className="button" onClick={this.reset}>
-                        Reset
-                    </button>
                 </div>
             </div>
         );
