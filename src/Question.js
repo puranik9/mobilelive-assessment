@@ -62,7 +62,7 @@ class Question extends Component {
 
         for(let i=0; i<cycleArr.length; i++) {
             //loop until current value is seen
-            if(cycleArr[i] == current) {
+            if(cycleArr[i] === current) {
                 currIndex = i; //keep record of current value index
                 let places = 0;
                 //for rightward shifting
