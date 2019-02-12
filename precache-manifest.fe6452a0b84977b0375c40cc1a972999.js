@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/mobilelive-assessment/static/js/runtime~main.3fedc3ef.js"
   },
   {
-    "revision": "789f20c8f92075a0b4f5",
-    "url": "/mobilelive-assessment/static/js/main.789f20c8.chunk.js"
+    "revision": "babb6436dfeeb9c3bf4b",
+    "url": "/mobilelive-assessment/static/js/main.babb6436.chunk.js"
   },
   {
     "revision": "7bbf2c8e29b4c57bc3d8",
     "url": "/mobilelive-assessment/static/js/2.7bbf2c8e.chunk.js"
   },
   {
-    "revision": "789f20c8f92075a0b4f5",
+    "revision": "babb6436dfeeb9c3bf4b",
     "url": "/mobilelive-assessment/static/css/main.1bd52734.chunk.css"
   },
   {
-    "revision": "d6df815b13b75fd762aeb82e658e43fc",
+    "revision": "59d67f0615c9d78ec9a792c5c26cb3d0",
     "url": "/mobilelive-assessment/index.html"
   }
 ];
