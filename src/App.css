@@ -1,33 +1,112 @@
-.App {
-  text-align: center;
+.code-box {
+    margin: 0 auto;
+    width: 65%;
+    padding: 0 2em;
+    overflow: scroll;
+    color: #efefef;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.code-snippet {
+    padding: 2em 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.blue-text {
+    color: #2A5797;
 }
 
-.App-link {
-  color: #61dafb;
+.Title {
+    padding: 0 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Question {
+    padding: 0 2em;
+}
+
+.Question ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Question ol {
+    padding-left: 1em;
+}
+
+.Answer h4 {
+    width: 65%;
+    margin: 2em auto 0;
+}
+
+.result {
+    visibility: hidden;
+}
+
+.result[visibility="hidden"] {
+    content: "Loading";
+}
+
+.input-group {
+    margin: 1em auto;
+    width: 60%;
+}
+
+.input-item {
+    width: 45%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.input-item label {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.input-item input {
+    outline: 0;
+    padding: 5px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    font-size: 15px;
+}
+
+.input-button {
+    text-align: center;
+}
+
+.button {
+    padding: 1em 2em;
+    margin: 1em;
+    font-size: 14px;
+    border-radius: 5px;
+    background: #2A5797;
+    color: #ffffff;
+    cursor: pointer;
+    outline: 0;
+    font-family: "Helvetica Neue";
+    border: none;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.input-result {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#loading-text {
+    display: inline;
+    color: #fff;
+}
+.code-styled {
+    background: #F9F2F4;
+    padding: 2px 5px;
+    color: #C7244E;
+}
+footer {
+    margin: 4% 0 0;
+    text-align: center;
 }
