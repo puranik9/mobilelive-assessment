@@ -12,7 +12,7 @@ class Question extends Component {
             imove: -2,
             start: 3,
             end: 7,
-            result: '',
+            result: 0,
             loading: false
         };
 
@@ -23,6 +23,7 @@ class Question extends Component {
 
     cycle(current, imove, start, end) {
 
+        console.log("entered");
         //Check if parameter values are entered or not
         if(imove === '' || current === '' || start === '' || end === '') {
             alert("Please enter the required values");
@@ -60,7 +61,7 @@ class Question extends Component {
 
         for(let i=0; i<cycleArr.length; i++) {
             //loop until current value is seen
-            if(cycleArr[i] === current) {
+            if(cycleArr[i] == current) {
                 currIndex = i; //keep record of current value index
                 let places = 0;
                 //for rightward shifting
@@ -70,7 +71,7 @@ class Question extends Component {
                         places++;
                         currIndex++; //update current value index
                         //if index exceeds array length, go to start
-                        if(currIndex>=5) {
+                        if(currIndex>=cycleArr.length) {
                             currIndex = 0;
                         }
                     }
